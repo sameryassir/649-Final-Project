@@ -6,121 +6,96 @@
     <title>Narrative Visualization Project</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f9f9f9; /* Light background for better readability */
-            color: #333; /* Darker text for contrast */
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-    
+
         h1 {
             text-align: center;
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #0044cc; /* Add a thematic color */
+            margin: 10px 0;
+            font-size: 2em;
+            color: #2c3e50;
         }
-    
+
         .authors {
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            color: #34495e;
             margin-bottom: 20px;
-            color: #666;
         }
-    
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+
+        .narrative {
+            max-width: 1000px;
             background: white;
+            margin: 10px auto;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-    
+
+        h3 {
+            font-size: 1.5em;
+            color: #34495e;
+            margin-top: 30px;
+        }
+
         iframe {
             display: block;
-            margin: 30px auto;
-            border: 1px solid #ccc;
-            border-radius: 4px;
             width: 100%;
-            height: 600px;
+            height: 1000px; /* Increase height to fit the content */
+            border: none;
         }
-    
-        h2 {
-            color: #0044cc;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-    
-        p {
-            text-align: justify;
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-    
+
         footer {
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    
-        .button {
-            display: inline-block;
-            background: #0044cc;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 10px;
-            font-size: 1em;
-        }
-    
-        .button:hover {
-            background: #003399;
+            margin: 30px 0;
+            color: #95a5a6;
         }
     </style>
-    
 </head>
 <body>
-    <!-- Title Section -->
-    <div class="container">
-        <h1>Narrative Visualization Project: Divided States</h1>
-        <p class="authors">
-            By Saira Rathod, Brian Metz, and Samer Yassir
-        </p>
+    <h1>Narrative Visualization Project: Divided States - Abortion Access and Restrictions Across the U.S.
+</h1>
+    <div class="authors">
+        By Saira Rathod, Brian Metz, and Samer Yassir
+    </div>
 
-        <!-- Narrative Section -->
-        <h2>Overview</h2>
+    <div class="narrative">
+        <h2>Divided States: Abortion Access and Restrictions Across the U.S.</h2>
         <p>
-            Abortion rights and reproductive healthcare access have become some of the most contentious issues in the United States. Recent years have seen shifts in abortion policy, leaving millions of women with vastly different access to care depending on where they live. The overturning of Roe v. Wade by the Supreme Court in 2022 fundamentally changed the legal landscape, giving individual states the power to regulate abortion. This decision, and further political developments, have created disparities in access to abortion services, with implications for women’s health.
+            Abortion rights and reproductive healthcare access have become some of the most contentious issues in the United States. Recent years have seen shifts in abortion policy, leaving millions of women with vastly different access to care depending on where they live. The overturning of Roe v. Wade by the Supreme Court in 2022 fundamentally changed the legal landscape, giving individual states the power to regulate abortion. This decision, and further political developments, has created disparities in access to abortion services, with implications for women’s health.
+        </p>
+        <p>
+            For nearly 50 years, Roe v. Wade, which was passed on January 22, 1973, guaranteed the constitutional right to abortion, setting the groundwork for reproductive health policy across the nation. Its repeal on June 24, 2022, marked by the Dobbs v. Jackson decision, abruptly ended federal protections and handed the issue over to states. As of today, the result in the United States has diverse and conflicting abortion policies. States like Texas, Alabama, and Arkansas have implemented total abortion bans, while others, such as California and Illinois, continue to provide broad access. The changes brought about by Dobbs have had immediate and measurable effects.
         </p>
 
-        <!-- First Visualization -->
-        <h2>Timeline of Abortion Services</h2>
+        <h3>Timeline of Abortion Services</h3>
         <p>
             The story of abortion policy is not static; it continues to evolve. The November 13, 2024, elections marked another pivotal moment. Several states held referenda or passed legislation altering their abortion policies. For example, one state shifted from a 15-week ban to a total ban, while another reinstated protections up to 20 weeks of pregnancy.
         </p>
-        <iframe src="visualization.html"></iframe>
+        <iframe src="state_abortion_confidence_intervals.html" title="Timeline of Abortion Services"></iframe>
 
-        <!-- Second Visualization -->
-        <h2>Abortion Policies Across U.S. States</h2>
+        <h3>Abortion Policies Map</h3>
         <p>
             To understand these changes, our interactive U.S. map highlights the current abortion policies in each state. Clicking on a state reveals its specific restrictions, ranging from gestational limits like 6-week or 12-week bans to total prohibitions. Our visualization allows users to explore these recent changes, offering a dynamic view of how political decisions impact access to reproductive healthcare in real-time.
         </p>
-        <iframe src="abortion_policies_map.html"></iframe>
+        <iframe src="abortion_policies_map.html" title="Abortion Policies Map"></iframe>
 
-        <h2>Impacts on Maternal Health</h2>
+        <h3>Impacts on Maternal Health</h3>
         <p>
-            These restrictive abortion policies don’t just limit access; they come with serious consequences for women’s health. In states with total bans, maternal mortality rates have risen. Data shows that women in these states are more likely to experience complications from unsafe or delayed procedures. For marginalized communities, including low-income women and women of color, the risks are even greater. Our analysis links the restrictive policies to measurable increases in maternal deaths and severe health outcomes. These trends are driven by several factors: lack of access to safe abortion services, delayed medical intervention during pregnancy complications, and reduced availability of healthcare providers in areas with bans. The data paints a sobering picture: policies intended to restrict abortion often result in worse health outcomes overall.
+            These restrictive abortion policies don’t just limit access; they come with serious consequences for women’s health. In states with total bans, maternal mortality rates have risen. Data shows that women in these states are more likely to experience complications from unsafe or delayed procedures. For marginalized communities, including low-income women and women of color, the risks are even greater. Our analysis links the restrictive policies to measurable increases in maternal deaths and severe health outcomes. These trends are driven by several factors: lack of access to safe abortion services, delayed medical intervention during pregnancy complications, and reduced availability of healthcare providers in areas with bans. The data paints a sobering picture: policies intended to restrict abortion often result in worse health outcomes for women overall.
+        </p>
+          <iframe src="visualization.html" title="Impacts on Maternal Health"></iframe>
+        <p>
+            As the legal landscape continues to shift, it is crucial to understand the real-world impacts of these policies. The decisions made impact the lives of millions of women, affecting their health, autonomy, and well-being. This project doesn’t seek to take a political stance but instead aims to inform, educate, and foster a deeper understanding of the data behind the debate.
         </p>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2024 Divided States Project Team</p>
+        &copy; 2024 Saira Rathod, Brian Metz, and Samer Yassir. All Rights Reserved.
     </footer>
 </body>
 </html>
