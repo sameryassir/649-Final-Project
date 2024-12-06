@@ -52,11 +52,13 @@
 
         /* Visualization iframe styles */
         iframe {
-            margin: 30px 0;
+            display: block;
+            margin: 20px auto; /* Center the iframe */
             border: 2px solid #8456a5; /* Purple border for visualizations */
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
         }
+
 
         /* Section headers */
         h3 {
@@ -110,7 +112,7 @@
             This visualization not only highlights the trends in states with restrictive laws but also shows the access in states that maintain non-restrictive policies. By allowing users to explore these data points, the plot aims to provide an interactive and comprehensive understanding of the real-world impacts of these legal and policy changes on reproductive health services. Each state can be selected to showcase the number of clinician-provided abortions. However, there is no data in some states or a sudden stop of abortions due to bans.
         </p>
 
-        <iframe src="state_abortion_confidence_intervals.html" width="100%" height="600px"></iframe>
+        <iframe src="state_abortion_confidence_intervals.html" width="100%" height="620px"></iframe>
 
         <p style="font-style: italic;">
             User Guide: Select a state using the drop down menu to view the number of clinician-provided abortions over time. The plot shows the number of abortions performed in each state, with confidence intervals to indicate the uncertainty in the data. The data is based on the most recent available information, providing a snapshot of the current landscape of abortion services in the United States.
@@ -148,7 +150,7 @@
         <p>
             The United States abortion policies to the timeline of abortion services, the data underscores the consequences of the system. Women in states with restrictive policies face barriers not only to abortion but also to broader reproductive healthcare, which further intensifies health inequities. This can be broken down further by Age and Race. 
         </p>
-        <iframe src="lineplot.html" width="100%" height="600px"></iframe>
+        <iframe src="lineplot.html" width="100%" height="450px"></iframe>
         <p style="font-style: italic;">
             User Guide: Zoom in and out of the plot and hover over data points to view the data by age and/or race. The plot provides a visual representation of the disparities in abortion services across different age groups and racial demographics.
         </p>
